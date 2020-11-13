@@ -96,9 +96,11 @@ print(Employee.fullname(emp_1)) #both are same
     Melwin Varghese
     
 
-Class Variables 
-Accessing the class variables there are two ways 
-1) Directly formt the Class name we can access/modify and overide the value for entire instances 
+## Class Variables 
+### Accessing the class variables there are two ways 
+
+
+ #### 1) Directly formt the Class name we can access/modify and overide the value for entire instances 
 
 
 ```python
@@ -119,7 +121,7 @@ emp_2.hike_the_pay()
 print(Employee.__dict__)
 print(emp_1.__dict__)
 print(emp_2.__dict__)
-Employee.hike_percent = .20
+Employee.hike_percent = .20 #Directly formt the Class name
 emp_1.hike_the_pay()
 emp_2.hike_the_pay()
 print(Employee.__dict__)
@@ -127,15 +129,15 @@ print(emp_1.__dict__)
 print(emp_2.__dict__)
 ```
 
-    {'__module__': '__main__', 'hike_percent': 0.1, '__init__': <function Employee.__init__ at 0x0000026C2D235288>, 'fullname': <function Employee.fullname at 0x0000026C2D2351F8>, 'hike_the_pay': <function Employee.hike_the_pay at 0x0000026C2D2350D8>, '__dict__': <attribute '__dict__' of 'Employee' objects>, '__weakref__': <attribute '__weakref__' of 'Employee' objects>, '__doc__': None}
+    {'__module__': '__main__', 'hike_percent': 0.1, '__init__': <function Employee.__init__ at 0x00000211DC452C10>, 'fullname': <function Employee.fullname at 0x00000211DC452F70>, 'hike_the_pay': <function Employee.hike_the_pay at 0x00000211DC494040>, '__dict__': <attribute '__dict__' of 'Employee' objects>, '__weakref__': <attribute '__weakref__' of 'Employee' objects>, '__doc__': None}
     {'first': 'Melwin', 'last': 'Varghese', 'pay': 990000.0000000001}
     {'first': 'Alwin', 'last': 'Varghese', 'pay': 1100000.0}
-    {'__module__': '__main__', 'hike_percent': 0.2, '__init__': <function Employee.__init__ at 0x0000026C2D235288>, 'fullname': <function Employee.fullname at 0x0000026C2D2351F8>, 'hike_the_pay': <function Employee.hike_the_pay at 0x0000026C2D2350D8>, '__dict__': <attribute '__dict__' of 'Employee' objects>, '__weakref__': <attribute '__weakref__' of 'Employee' objects>, '__doc__': None}
+    {'__module__': '__main__', 'hike_percent': 0.2, '__init__': <function Employee.__init__ at 0x00000211DC452C10>, 'fullname': <function Employee.fullname at 0x00000211DC452F70>, 'hike_the_pay': <function Employee.hike_the_pay at 0x00000211DC494040>, '__dict__': <attribute '__dict__' of 'Employee' objects>, '__weakref__': <attribute '__weakref__' of 'Employee' objects>, '__doc__': None}
     {'first': 'Melwin', 'last': 'Varghese', 'pay': 1188000.0}
     {'first': 'Alwin', 'last': 'Varghese', 'pay': 1320000.0}
     
 
-2) Accessing the the Class variables as instance variables
+#### 2) Accessing the the Class variables as instance variables
 
 
 ```python
@@ -164,7 +166,7 @@ print(emp_2.__dict__)
     {'first': 'Alwin', 'last': 'Varghese', 'pay': 1100000.0}
     
 
-3) we can use as a static variables 
+#### 3) we can use as a static variables 
 
 
 ```python
