@@ -41,20 +41,79 @@ print("p1+ p2 =",p1+p2)
 
 ## Other Operational Operators
 
-Operator	        Expression	       Internally
-Addition	        p1 + p2	            p1.__add__(p2)
-Subtraction	        p1 - p2	            p1.__sub__(p2)
-Multiplication	    p1 * p2	            p1.__mul__(p2)
-Power	            p1 ** p2	        p1.__pow__(p2)
-Division	        p1 / p2	            p1.__truediv__(p2)
-Floor Division	    p1 // p2	        p1.__floordiv__(p2)
-Remainder (modulo)	p1 % p2	            p1.__mod__(p2)
-Bitwise Left Shift	p1 << p2	        p1.__lshift__(p2)
-Bitwise Right Shift	p1 >> p2	        p1.__rshift__(p2)
-Bitwise AND	        p1 & p2	            p1.__and__(p2)
-Bitwise OR	        p1 | p2	            p1.__or__(p2)
-Bitwise XOR	        p1 ^ p2	            p1.__xor__(p2)
-Bitwise NOT	        ~p1	                p1.__invert__()
+<table>
+<tr>    
+    <th>Operator</th>	        
+    <th>Expression</th>	       
+    <th>Internally</th>
+</tr>    
+<tr>    
+<td>Addition</td>	        
+<td>p1 + p2</td>
+<td>p1.__add__(p2)</td>
+</tr>
+<tr>
+    <td>Subtraction</td>
+    <td>p1 - p2</td>
+    <td>p1.__sub__(p2)</td>
+</tr>
+<tr>
+    <td>Multiplication</td>
+    <td>p1 * p2</td>
+    <td>p1.__mul__(p2)</td>
+</tr>
+<tr>
+    <td>Power</td>
+    <td>p1 ** p2</td>
+    <td>p1.__pow__(p2)</td>
+</tr>
+<tr>
+    <td>Division</td>
+    <td>p1 / p2</td>
+    <td>p1.__truediv__(p2)</td>
+</tr>
+<tr>
+    <td>Floor Division</td>
+    <td>p1 // p2</td>
+    <td>p1.__floordiv__(p2)</td>
+</tr> 
+<tr>
+    <td>Remainder (modulo)</td>
+    <td>p1 % p2</td>
+    <td>p1.__mod__(p2)</td>
+</tr>
+<tr>
+    <td>Bitwise Left Shift</td>
+    <td>p1 << p2</td>
+    <td> p1.__lshift__(p2)</td>
+</tr>
+<tr>
+    <td>Bitwise Right Shift</td>
+    <td>p1 >> p2</td>
+    <td>p1.__rshift__(p2)</td>
+</tr>
+<tr>
+    <td>Bitwise AND</td>
+    <td>p1 & p2</td>
+    <td>p1.__and__(p2)</td>
+</tr>
+<tr>
+    <td>Bitwise OR</td>
+    <td>p1 | p2</td>
+    <td>p1.__or__(p2)</td>
+</tr>
+<tr>
+    <td>Bitwise XOR</td>
+    <td>p1 ^ p2</td>
+    <td>p1.__xor__(p2)</td>
+</tr>
+<tr>
+    <td>Bitwise NOT</td>
+    <td>~p1</td>
+    <td>p1.__invert__()</td>
+</tr>  
+</table>    
+
 ## Overloading Comparison Operators
 
 
@@ -87,13 +146,45 @@ print(p1<p3)
     False
     False
     
-Operator	              Expression	  Internally
-Less than	                p1 < p2	      p1.__lt__(p2)
-Less than or equal to	    p1 <= p2	  p1.__le__(p2)
-Equal to	                p1 == p2	  p1.__eq__(p2)
-Not equal to	            p1 != p2	  p1.__ne__(p2)
-Greater than	            p1 > p2	      p1.__gt__(p2)
-Greater than or equal to	p1 >= p2	  p1.__ge__(p2)
+
+<table>
+    <tr>
+        <th>Operator</th>
+        <th>Expression</th>
+        <th>Internally</th>
+    </tr> 
+    <tr>
+        <td>Less than</td>
+        <td>p1 < p2</td>
+        <td>p1.__lt__(p2)</td>
+    </tr>
+    <tr>
+        <td>Less than or equal to</td>
+        <td>p1 <= p2</td>
+        <td>p1.__le__(p2)</td>
+    </tr>
+    <tr>
+        <td>Equal to</td>
+        <td>p1 == p2</td>
+        <td>p1.__eq__(p2)</td>
+    </tr>
+    <tr>
+        <td>Not equal to</td>
+        <td>p1 != p2</td>
+        <td>p1.__ne__(p2)</td>
+    </tr>  
+    <tr>
+        <td>Greater than</td>
+        <td>p1 > p2</td>
+        <td>p1.__gt__(p2)</td>
+    </tr>
+    <tr>
+        <td>Greater than or equal to</td>
+        <td>p1 >= p2</td>
+        <td>p1.__ge__(p2)</td>
+    </tr>    
+</table>    
+
 
 ```python
 
