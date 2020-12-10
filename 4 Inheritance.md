@@ -111,7 +111,7 @@ class Derived2(Derived1):
 
 It refers to an ambiguity that arises when two classes Class2 and Class3 inherit from a superclass Class1 and class Class4 inherits from both Class2 and Class3. If there is a method “m” which is an overridden method in one of Class2 and Class3 or both then the ambiguity arises which of the method “m” Class4 should inherit.
 
-https://media.geeksforgeeks.org/wp-content/uploads/20191222084637/Diamond1.png
+![title](https://media.geeksforgeeks.org/wp-content/uploads/20191222084637/Diamond1.png)
 
 
 ```python
