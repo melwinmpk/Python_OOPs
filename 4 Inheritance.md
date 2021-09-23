@@ -67,6 +67,16 @@ True
 
 >>> issubclass(bool,int)
 True
+<h3>Types of Inheritance in Python Programming</h3>
+<h4>Types of inheritance: There are five types of inheritance in python programming:</h4>
+<ol>
+<li>Single inheritance</li>
+<li>Multiple inheritances    (more than one parent)</li>
+<li>Multilevel inheritance   (parents itself is derived from another parent)</li>
+<li>Hierarchical inheritance (Single Parent has multiple child) </li>
+<li>Hybrid inheritance       (like the diamond problem)</li>
+</ol>
+
 # Python Multiple Inheritance
 
 ## Multiple Inheritance
@@ -121,8 +131,8 @@ class Class1:
         
 class Class2(Class1): 
     def m(self): 
-        print("In Class2") 
-  
+        print("In Class2")
+        
 class Class3(Class1): 
     def m(self): 
         print("In Class3")   
@@ -149,24 +159,25 @@ way to solve the use case is depends on the requirement
 # super() 
   
 class Class1: 
+    
     def m(self): 
-        print("In Class1") 
-  
+        print("In Class1")
+        
 class Class2(Class1): 
     def m(self): 
         print("In Class2") 
-        super().m() 
-  
+        super().m()
+        
 class Class3(Class1): 
     def m(self): 
         print("In Class3") 
-        super().m() 
-  
+        super().m()
+        
 class Class4(Class2, Class3): 
     def m(self): 
         print("In Class4")    
-        super().m() 
-       
+        super().m()
+        
 obj = Class4() 
 obj.m() 
 ```
